@@ -5,16 +5,16 @@
     color: #666;
   }
   &-TopBg {
-    background: transparent url(./img/bg_pc.svg) top center no-repeat;
+    background: transparent url(../img/bg_pc.svg) top center no-repeat;
     background-size: 100% auto;
     height: 90vh;
     overflow: hidden;
     @include sp() {
-      background: transparent url(./img/bg_sp.svg) top center no-repeat;
+      background: transparent url(../img/bg_sp.svg) top center no-repeat;
       background-size: 100% auto;
     }
     @include tab() {
-      background: transparent url(./img/bg_tab.svg) top center no-repeat;
+      background: transparent url(../img/bg_tab.svg) top center no-repeat;
       background-size: 100% auto;
       padding-left: 8%;
     }

@@ -732,17 +732,17 @@ img {
   color: #666; }
 
 .index-TopBg {
-  background: transparent url(./img/bg_pc.svg) top center no-repeat;
+  background: transparent url(../img/bg_pc.svg) top center no-repeat;
   background-size: 100% auto;
   height: 90vh;
   overflow: hidden; }
   @media print, screen and (max-width: 750px) {
     .index-TopBg {
-      background: transparent url(./img/bg_sp.svg) top center no-repeat;
+      background: transparent url(../img/bg_sp.svg) top center no-repeat;
       background-size: 100% auto; } }
   @media print, screen and (min-width: 751px) and (max-width: 1024px) {
     .index-TopBg {
-      background: transparent url(./img/bg_tab.svg) top center no-repeat;
+      background: transparent url(../img/bg_tab.svg) top center no-repeat;
       background-size: 100% auto;
       padding-left: 8%; } }
 
