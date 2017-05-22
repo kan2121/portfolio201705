@@ -1,0 +1,120 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title Portfolio
+    link(href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet")
+    link(href='css/style.css', rel='stylesheet')
+
+    
+    script(src='/js/jquery-1.12.4.min.js')
+    script(src='/js/main.js')
+
+
+  body#pageTop
+    header.ly-header
+      .ly-contentWrapper
+        h1.hl-style01 Portfolio
+        p.index-Caption ポートフォリオ
+        .index-TopBg
+          nav.index-pageNavBlock
+            a(href='#skillBlock').bn-style01.index-pageNavBlock__btn.index-pageNavBlock__btn--skill
+              span.bn-btnTitle skill
+              span.bn-caption スキル
+            a(href='#profileBlock').bn-style01.index-pageNavBlock__btn.index-pageNavBlock__btn--prof
+              span.bn-btnTitle profile
+              span.bn-caption プロフィール
+          p.index-pageScrollBtnBox 
+            a(href='#skillBlock').index-pageScrollBtn scroll
+
+    .ly-wrapper
+      main.main#js-mainBlock
+        section.ly-pageBlock#skillBlock
+          .ly-contentWrapper
+            h2.hl-style02.hl-style02--skill 
+              span.hl-style02__title Skill
+              span.hl-style02__caption スキル
+            h3.hl-style03 グラフィックツール
+            ul.index-skillList
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--ps
+                  dt.index-skillinnerBox__ttl Photoshop
+                  dd.index-skillinnerBox__txt 画像の加工
+                  dd.index-skillinnerBox__txt gifアニメの作成
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--ill
+                  dt.index-skillinnerBox__ttl Illustrator
+                  dd.index-skillinnerBox__txt パスツールを使用したイラスト
+                  dd.index-skillinnerBox__txt SVG画像の作成
+
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--fla
+                  dt.index-skillinnerBox__ttl Animate（flash）
+                  dd.index-skillinnerBox__txt キーフレームアニメーション
+                  dd.index-skillinnerBox__txt AS 3.0でのコンテンツ作成
+            h3.hl-style03 言語等
+            ul.index-skillList
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--html5
+                  dt.index-skillinnerBox__ttl HTML5
+                  dd.index-skillinnerBox__txt レスポンシブデザイン
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--pug
+                  dt.index-skillinnerBox__ttl pug(Jade) 
+                  dd.index-skillinnerBox__txt HTMLテンプレートからのページ作成
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--sass
+                  dt.index-skillinnerBox__ttl SASS 
+                  dd.index-skillinnerBox__txt Sassを利用したcss作成
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--js
+                  dt.index-skillinnerBox__ttl JavaScript 
+                  dd.index-skillinnerBox__txt jQueryを利用した動的ページ作成
+                  dd.index-skillinnerBox__txt canvasアニメーション
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--gulp
+                  dt.index-skillinnerBox__ttl gulp 
+                  dd.index-skillinnerBox__txt node.jsのインストールから、タスクの設定まで
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--git
+                  dt.index-skillinnerBox__ttl Git 
+                  dd.index-skillinnerBox__txt GUIでの操作
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--css
+                  dt.index-skillinnerBox__ttl CSS設計 
+                  dd.index-skillinnerBox__txt BEM
+                  dd.index-skillinnerBox__txt ECSS
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--md
+                  dt.index-skillinnerBox__ttl Markdown記法
+                  dd.index-skillinnerBox__txt mdファイルからのpdf作成
+
+
+        section.ly-profBlock#profileBlock
+          .ly-contentWrapper
+            h2.hl-style02.hl-style02--prof
+              span.hl-style02__title Profile
+              span.hl-style02__caption プロフィール
+            dl.index-profList
+              dt.index-profList__ttl 経歴
+              dd.index-profList__txt webデザイン/マークアップ：１０年〜
+              dd.index-profList__txt JavaScript（jQuery）：4年〜
+              dt.index-profList__ttl 目標
+              dd.index-profList__txt デザイナーの軸を持ちつつ、フロントエンドエンジニアを目指しています
+              dt.index-profList__ttl 勉強中
+              dd.index-profList__txt サーバサイド技術
+              dd.index-profList__txt JavaScript(ES2015/ES6)
+              dd.index-profList__txt Linux
+
+
+
+
+    footer.ly-footer#js-footerBlock
+
+        p.index-pageTopBtnBox
+          a(href='#pageTop').index-pageTopBtn pageTop
+        
+        

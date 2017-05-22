@@ -1,0 +1,68 @@
+.bn {
+  &-style01 {
+    display: inline-block;
+    padding: 0;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #ccc;
+    color: #666;
+    @include font-size(18);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  &-btnTitle {
+    font-family: $font-family-pop;
+    @include font-size(40);
+    display: block;
+    font-weight: normal;
+    line-height: 1em;
+    color: #fff;
+    z-index: -10;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include sp() {
+      top: auto;
+      left: auto;
+      bottom: -2px;
+      right: 2px;
+      position: absolute;
+    }
+    @include pc() {
+      position: absolute;
+      margin-top: 50px;
+    }
+    @include tab() {
+      position: absolute;
+      margin-top: 50px;
+    }
+  }
+  &-caption {
+    display: inline-block;
+    line-height: 1em;
+    height: 1em;
+    z-index: 10;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // border: 1px solid #00c;
+    @include font-size(20);
+    @include sp() {
+      position: absolute;
+    }
+    @include pc() {
+      position: absolute;
+      margin-top: 100px;
+    }
+    @include tab() {
+      margin-top: 100px;
+      position: absolute;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+html {
+    font-family: $font-family-yugo;
+    color: $font-color;
+    word-wrap: break-word;
+    font-size: $base_fz * 1px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: $link_deco;
+    color: $link_color;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    vertical-align: bottom;
+}

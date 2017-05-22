@@ -1,15 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-
-<body>
-  test
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body id="pageTop">
+    <header class="ly-header">
+      <div class="ly-contentWrapper">
+        <h1 class="hl-style01">Portfolio</h1>
+        <p class="index-Caption">ポートフォリオ</p>
+        <div class="index-TopBg">
+          <nav class="index-pageNavBlock"><a class="bn-style01 index-pageNavBlock__btn index-pageNavBlock__btn--skill" href="#skillBlock"><span class="bn-btnTitle">skill</span><span class="bn-caption">スキル</span></a><a class="bn-style01 index-pageNavBlock__btn index-pageNavBlock__btn--prof" href="#profileBlock"><span class="bn-btnTitle">profile</span><span class="bn-caption">プロフィール</span></a></nav>
+          <p class="index-pageScrollBtnBox"> <a class="index-pageScrollBtn" href="#skillBlock">scroll</a></p>
+        </div>
+      </div>
+    </header>
+    <div class="ly-wrapper">
+      <main class="main" id="js-mainBlock">
+        <section class="ly-pageBlock" id="skillBlock">
+          <div class="ly-contentWrapper">
+            <h2 class="hl-style02 hl-style02--skill"> <span class="hl-style02__title">Skill</span><span class="hl-style02__caption">スキル</span></h2>
+            <h3 class="hl-style03">グラフィックツール</h3>
+            <ul class="index-skillList">
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--ps">
+                  <dt class="index-skillinnerBox__ttl">Photoshop</dt>
+                  <dd class="index-skillinnerBox__txt">画像の加工</dd>
+                  <dd class="index-skillinnerBox__txt">gifアニメの作成</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--ill">
+                  <dt class="index-skillinnerBox__ttl">Illustrator</dt>
+                  <dd class="index-skillinnerBox__txt">パスツールを使用したイラスト</dd>
+                  <dd class="index-skillinnerBox__txt">SVG画像の作成</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--fla">
+                  <dt class="index-skillinnerBox__ttl">Animate（flash）</dt>
+                  <dd class="index-skillinnerBox__txt">キーフレームアニメーション</dd>
+                  <dd class="index-skillinnerBox__txt">AS 3.0でのコンテンツ作成</dd>
+                </dl>
+              </li>
+            </ul>
+            <h3 class="hl-style03">言語等</h3>
+            <ul class="index-skillList">
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--html5">
+                  <dt class="index-skillinnerBox__ttl">HTML5</dt>
+                  <dd class="index-skillinnerBox__txt">レスポンシブデザイン</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--pug">
+                  <dt class="index-skillinnerBox__ttl">pug(Jade) </dt>
+                  <dd class="index-skillinnerBox__txt">HTMLテンプレートからのページ作成</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--sass">
+                  <dt class="index-skillinnerBox__ttl">SASS </dt>
+                  <dd class="index-skillinnerBox__txt">Sassを利用したcss作成</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--js">
+                  <dt class="index-skillinnerBox__ttl">JavaScript </dt>
+                  <dd class="index-skillinnerBox__txt">jQueryを利用した動的ページ作成</dd>
+                  <dd class="index-skillinnerBox__txt">canvasアニメーション</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--gulp">
+                  <dt class="index-skillinnerBox__ttl">gulp </dt>
+                  <dd class="index-skillinnerBox__txt">node.jsのインストールから、タスクの設定まで</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--git">
+                  <dt class="index-skillinnerBox__ttl">Git </dt>
+                  <dd class="index-skillinnerBox__txt">GUIでの操作</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--css">
+                  <dt class="index-skillinnerBox__ttl">CSS設計 </dt>
+                  <dd class="index-skillinnerBox__txt">BEM</dd>
+                  <dd class="index-skillinnerBox__txt">ECSS</dd>
+                </dl>
+              </li>
+              <li class="index-skillList__item"> 
+                <dl class="index-skillinnerBox index-skillinnerBox--md">
+                  <dt class="index-skillinnerBox__ttl">Markdown記法</dt>
+                  <dd class="index-skillinnerBox__txt">mdファイルからのpdf作成</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="ly-profBlock" id="profileBlock">
+          <div class="ly-contentWrapper">
+            <h2 class="hl-style02 hl-style02--prof"><span class="hl-style02__title">Profile</span><span class="hl-style02__caption">プロフィール</span></h2>
+            <dl class="index-profList">
+              <dt class="index-profList__ttl">経歴</dt>
+              <dd class="index-profList__txt">webデザイン/マークアップ：１０年〜</dd>
+              <dd class="index-profList__txt">JavaScript（jQuery）：4年〜</dd>
+              <dt class="index-profList__ttl">目標</dt>
+              <dd class="index-profList__txt">デザイナーの軸を持ちつつ、フロントエンドエンジニアを目指しています</dd>
+              <dt class="index-profList__ttl">勉強中</dt>
+              <dd class="index-profList__txt">サーバサイド技術</dd>
+              <dd class="index-profList__txt">JavaScript(ES2015/ES6)</dd>
+              <dd class="index-profList__txt">Linux</dd>
+            </dl>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="ly-footer" id="js-footerBlock">
+      <p class="index-pageTopBtnBox"><a class="index-pageTopBtn" href="#pageTop">pageTop</a></p>
+    </footer>
+  </body>
 </html>
