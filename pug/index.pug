@@ -6,7 +6,7 @@ html(lang='ja')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     title Portfolio
     link(href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Ribeye" rel="stylesheet")
     link(href='css/style.css', rel='stylesheet')
 
     
@@ -15,24 +15,29 @@ html(lang='ja')
 
 
   body#pageTop
-    header.ly-header
-      .ly-contentWrapper
-        h1.hl-style01 Portfolio
-        p.index-Caption ポートフォリオ
-        .index-TopBg
-          nav.index-pageNavBlock
-            a(href='#skillBlock').bn-style01.index-pageNavBlock__btn.index-pageNavBlock__btn--skill
-              span.bn-btnTitle skill
-              span.bn-caption スキル
-            a(href='#profileBlock').bn-style01.index-pageNavBlock__btn.index-pageNavBlock__btn--prof
-              span.bn-btnTitle profile
-              span.bn-caption プロフィール
-          p.index-pageScrollBtnBox 
-            a(href='#skillBlock').index-pageScrollBtn scroll
+    header.ly-header.index-view#js-headerBlock
+      .index-headerBlock
+        .ly-contentWrapper
+          h1.hl-style01 
+            a(href='#pageTop') Portfolio
+          p.index-Caption ポートフォリオ
+          p.index-github 
+            a(href='https://github.com/kan2121/portfolio201705')
+              span GitHubリポジトリ
+          .index-TopBg
+            nav.index-pageNavBlock
+              a(href='#skillBlock').index-btnStyle01.index-pageNavBlock__btn.index-pageNavBlock__btn--skill
+                span.index-btnStyle01__ttl skill
+                span.index-btnStyle01__cap スキル
+              a(href='#profileBlock').index-btnStyle01.index-pageNavBlock__btn.index-pageNavBlock__btn--prof
+                span.index-btnStyle01__ttl profile
+                span.index-btnStyle01__cap プロフィール
+            p.index-pageScrollBtnBox 
+              a(href='#skillBlock').index-pageScrollBtn scroll
 
     .ly-wrapper
       main.main#js-mainBlock
-        section.ly-pageBlock#skillBlock
+        section.index-pageBlock#skillBlock
           .ly-contentWrapper
             h2.hl-style02.hl-style02--skill 
               span.hl-style02__title Skill
@@ -42,7 +47,7 @@ html(lang='ja')
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--ps
                   dt.index-skillinnerBox__ttl Photoshop
-                  dd.index-skillinnerBox__txt 画像の加工
+                  dd.index-skillinnerBox__txt 画像の加工、レタッチ
                   dd.index-skillinnerBox__txt gifアニメの作成
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--ill
@@ -52,48 +57,56 @@ html(lang='ja')
 
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--fla
-                  dt.index-skillinnerBox__ttl Animate（flash）
+                  dt.index-skillinnerBox__ttl Animate(flash)
                   dd.index-skillinnerBox__txt キーフレームアニメーション
                   dd.index-skillinnerBox__txt AS 3.0でのコンテンツ作成
             h3.hl-style03 言語等
             ul.index-skillList
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--html5
-                  dt.index-skillinnerBox__ttl HTML5
-                  dd.index-skillinnerBox__txt レスポンシブデザイン
+                  dt.index-skillinnerBox__ttl HTML
+                  dd.index-skillinnerBox__txt HTML5/4.01
+                  dd.index-skillinnerBox__txt フィーチャーフォン向け
+
               li.index-skillList__item 
-                dl.index-skillinnerBox.index-skillinnerBox--pug
-                  dt.index-skillinnerBox__ttl pug(Jade) 
-                  dd.index-skillinnerBox__txt HTMLテンプレートからのページ作成
-              li.index-skillList__item 
-                dl.index-skillinnerBox.index-skillinnerBox--sass
-                  dt.index-skillinnerBox__ttl SASS 
-                  dd.index-skillinnerBox__txt Sassを利用したcss作成
+                dl.index-skillinnerBox.index-skillinnerBox--css
+                  dt.index-skillinnerBox__ttl CSS
+                  dd.index-skillinnerBox__txt レスポンシブページ
+                  dd.index-skillinnerBox__txt BEM
+                  dd.index-skillinnerBox__txt ECSS
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--js
                   dt.index-skillinnerBox__ttl JavaScript 
-                  dd.index-skillinnerBox__txt jQueryを利用した動的ページ作成
-                  dd.index-skillinnerBox__txt canvasアニメーション
+                  dd.index-skillinnerBox__txt jQuery
+                  dd.index-skillinnerBox__txt canvas
+
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--sass
+                  dt.index-skillinnerBox__ttl Sass 
+                  dd.index-skillinnerBox__txt Sassを利用したcss作成
+
+              li.index-skillList__item 
+                dl.index-skillinnerBox.index-skillinnerBox--pug
+                  dt.index-skillinnerBox__ttl Pug(Jade) 
+                  dd.index-skillinnerBox__txt HTMLテンプレートからのページ作成
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--gulp
-                  dt.index-skillinnerBox__ttl gulp 
-                  dd.index-skillinnerBox__txt node.jsのインストールから、タスクの設定まで
+                  dt.index-skillinnerBox__ttl gulp.js 
+                  dd.index-skillinnerBox__txt node.jsのインストールからタスクの設定まで
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--git
                   dt.index-skillinnerBox__ttl Git 
                   dd.index-skillinnerBox__txt GUIでの操作
-              li.index-skillList__item 
-                dl.index-skillinnerBox.index-skillinnerBox--css
-                  dt.index-skillinnerBox__ttl CSS設計 
-                  dd.index-skillinnerBox__txt BEM
-                  dd.index-skillinnerBox__txt ECSS
+
               li.index-skillList__item 
                 dl.index-skillinnerBox.index-skillinnerBox--md
-                  dt.index-skillinnerBox__ttl Markdown記法
-                  dd.index-skillinnerBox__txt mdファイルからのpdf作成
+                  dt.index-skillinnerBox__ttl etc...
+                  dd.index-skillinnerBox__txt Markdown
+                  dd.index-skillinnerBox__txt WAI-ARIA
+                  dd.index-skillinnerBox__txt Emmet
 
 
-        section.ly-profBlock#profileBlock
+        section.index-profBlock#profileBlock
           .ly-contentWrapper
             h2.hl-style02.hl-style02--prof
               span.hl-style02__title Profile

@@ -10,7 +10,8 @@
 
     //スクロールしたとき
     $(document).on('scroll', function() {
-      scrollMenu(this);
+      scrollMenu_header(this);
+      scrollMenu_footer(this);
     });
 
   });
@@ -27,9 +28,22 @@
 
 
   //スクロールしたらメニューが出る
-  function scrollMenu(el) {
+  function scrollMenu_header(el) {
     //mainposition までスクロールされたとき
-    // var mainposition = $("#js-mainBlock").offset().top - 1;
+    var mainposition = $("#js-mainBlock").offset().top - 1;
+    // var mainposition = 100;
+    if ($(el).scrollTop() > mainposition) {
+      $('#js-headerBlock').removeClass('index-view');
+      $('#js-headerBlock').addClass('index-menubar');
+
+    } else {
+      $('#js-headerBlock').removeClass('index-menubar');
+      $('#js-headerBlock').addClass('index-view');
+    }
+    return false;
+  }
+  //スクロールしたらメニューが出る
+  function scrollMenu_footer(el) {
     var mainposition = 100;
     if ($(el).scrollTop() > mainposition) {
       $('#js-footerBlock').addClass('fixed');
@@ -38,7 +52,6 @@
     }
     return false;
   }
-
 
 
 
